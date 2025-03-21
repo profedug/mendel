@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Genética</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Genética (Leis de Mendel)</h1>
+    <form id="geneticsForm">
+      <label for="parent1">Genótipo do Parente 1 (ex.: Aa):</label>
+      <input type="text" id="parent1" placeholder="Ex.: Aa" required>
+
+      <label for="parent2">Genótipo do Parente 2 (ex.: Aa):</label>
+      <input type="text" id="parent2" placeholder="Ex.: Aa" required>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="results">
+      <h2>Resultados:</h2>
+      <p>Probabilidades dos Genótipos:</p>
+      <ul id="genotypeResults"></ul>
+      <p>Probabilidades dos Fenótipos:</p>
+      <ul id="phenotypeResults"></ul>
+    </div>
+
+    <div class="punnett-square">
+      <h2>Tabela de Punnett:</h2>
+      <table id="punnettTable"></table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
